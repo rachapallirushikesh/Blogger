@@ -26,7 +26,7 @@ export default function Dashboard(){
         const token = localStorage.getItem('x-token');
         setCb(false);
         setMb(true);
-        axios.get('http://localhost:7000/postBlogData',{
+        axios.get('https://blogger-2knx.onrender.com/postBlogData',{
             headers:{
                 'x-token':token
             }
@@ -59,7 +59,7 @@ export default function Dashboard(){
 
     function handlePost(){
         const token = localStorage.getItem('x-token');
-        axios.post('http://localhost:7000/postBlogData',{title,url,name,content},{
+        axios.post('https://blogger-2knx.onrender.com/postBlogData',{title,url,name,content},{
             headers:{
                 'x-token':token
             }
@@ -92,7 +92,7 @@ export default function Dashboard(){
 
     function handleDelete(id) {
         const token = localStorage.getItem('x-token');
-        axios.delete(`http://localhost:7000/postBlogData/${id}`, {
+        axios.delete(`https://blogger-2knx.onrender.com/postBlogData/${id}`, {
             headers: {
                 'x-token': token
             }

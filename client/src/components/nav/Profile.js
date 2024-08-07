@@ -9,7 +9,7 @@ export default function Profile() {
     const [customerData,setData] = React.useState({});
     useEffect(() => {
         const token = localStorage.getItem('x-token');
-        axios.get("http://localhost:7000/getCustomerData", {
+        axios.get("https://blogger-2knx.onrender.com/getCustomerData", {
             headers: {
                 'x-token': token
             }

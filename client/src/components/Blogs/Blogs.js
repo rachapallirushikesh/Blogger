@@ -9,7 +9,7 @@ export default function Blogs(){
     const navigate = useNavigate();
     useEffect(()=>{
         const token = localStorage.getItem('x-token');
-        axios.get('http://localhost:7000/blogs')
+        axios.get('https://blogger-2knx.onrender.com/blogs')
         .then(res=>{
             setArr(res.data);
         })

@@ -52,7 +52,7 @@ export default function Register(){
         }
        
         
-        axios.post("http://localhost:7000/customerData",{email,name,number,password,gender})
+        axios.post("https://blogger-2knx.onrender.com/customerData",{email,name,number,password,gender})
              .then(res=>{
                 navigate('/login')
                 setMessage('')
