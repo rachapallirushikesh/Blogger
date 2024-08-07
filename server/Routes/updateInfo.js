@@ -6,7 +6,7 @@ const { Customer } = require('./AuthRoutes');
 const cors = require('cors');
 
 router.use(cors({
-    origin: ["https://shopify-ecommerce-1.onrender.com", "http://localhost:3000"]
+    origin: ["https://blogger-1-xt28.onrender.com", "http://localhost:3000"]
 }));
 
 router.put('/', verify, async (req, res) => {

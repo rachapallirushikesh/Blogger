@@ -10,7 +10,7 @@ const {Customer} = require('./AuthRoutes');
 const router = express.Router();
 router.use(express.json());
 router.use(cors({
-    origin : ["https://shopify-ecommerce-1.onrender.com","http://localhost:3000"]
+    origin : ["https://blogger-1-xt28.onrender.com","http://localhost:3000"]
 }));
 
 router.post('/',async(req,res)=>{

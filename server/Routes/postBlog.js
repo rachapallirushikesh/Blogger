@@ -8,7 +8,7 @@ const cors = require('cors');
 
 router.use(express.json());
 router.use(cors({
-    origin: ["https://shopify-ecommerce-1.onrender.com", "http://localhost:3000"]
+    origin: ["https://blogger-1-xt28.onrender.com", "http://localhost:3000"]
 }));
 
 const customerSchema = new mongoose.Schema({
