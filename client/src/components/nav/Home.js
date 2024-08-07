@@ -17,6 +17,7 @@ export default function Home() {
 
     const handleCLick = () =>{
         localStorage.removeItem('x-token');
+        navigate('/');
     }
 
     function gotoHome(){
