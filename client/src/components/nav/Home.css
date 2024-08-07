@@ -99,16 +99,16 @@ body {
     align-items: center;
 }
 
-.dropdown-list li a {
+.dropdown-list li{
     color: black;
     padding: 10px;
-    text-decoration: none;
+    /* text-decoration: none; */
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.dropdown-list li a:hover {
+.dropdown-list li:hover {
     background-color: #f1f1f1;
 }
 
