@@ -26,6 +26,14 @@ export default function Home() {
         navigate('/blogs');
     }
 
+    const handleProfile  = ()=>{
+        navigate('/Profile');
+    }
+
+    const handleDashboard = ()=>{
+        navigate('/dashboard');
+    }
+
     const [arr,setArr] = useState([]);
 
 //     useEffect(()=>{
@@ -89,10 +97,10 @@ const handleCardClick = (blog) => {
                                             <button className="dropdown-signup">Sign Up</button>
                                         </div> */}
                                         <ul className="dropdown-list" onMouseLeave={toggleDropdown}>
-                                            <li><a href="/profile">My Profile</a></li>
-                                            <li><a href="/dashboard">Dashboard</a></li>
-                                            <li><a href="/blogs">Blogs</a></li>
-                                            <li onClick={handleCLick}><a href="/">Logout</a></li>
+                                            <li onClick={handleProfile}>My Profile</li>
+                                            <li onClick={handleDashboard}>Dashboard</li>
+                                            <li onClick={gotoBlog}>Blogs</li>
+                                            <li onClick={handleCLick}>Logout</li>
 
                                             {/* <li><a href="/wishlist"><i className="fas fa-heart"></i> Wishlist</a></li>
                                             <li><a href="/rewards"><i className="fas fa-gift"></i> Rewards</a></li>
