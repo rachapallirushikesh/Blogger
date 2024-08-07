@@ -1,0 +1,74 @@
+.auth{
+    padding:6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#d4dfdc;
+}
+.reg{
+    padding:5.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#d4dfdc;
+    gap:5rem;
+}
+.auth-in{
+    background-color: #f0f0f0;
+    padding:1.5rem 2rem ;
+}
+.reg-in{
+    background-color: white;
+    padding:0rem 2rem ;
+}
+.auth-in p{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.reg-in p{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+#email,#pass{
+    padding: 12px 0px 12px 5px;
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+#email::placeholder{
+    font-size: 14px;
+}
+.continue{
+    padding: 14px 0;
+    text-align: center;
+    width: 110px;
+    background-color: red;
+    color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media (max-width:600px){
+    
+    #email,#pass{
+        padding: 12px 0px 12px 5px;
+        width: 250px;
+        font-size: 15px;
+        margin-bottom: .7rem;
+    }
+    .continue{
+        padding: 14px 0;
+        width: 260px;
+    }
+    .auth-in p, .reg-in p{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .auth-in span, .reg-in span{
+        font-size: 13px;
+    }
+    
+}
