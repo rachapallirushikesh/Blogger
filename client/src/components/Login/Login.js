@@ -29,7 +29,7 @@ export default function Login(){
 
     // const [token,setToken] = React.useState(null);
     function handleClick(){
-        const result = axios.post("https://blogger-2knx.onrender.com/customerValidation",{email,password})
+        const result = axios.post("https://blogger-iz5z.onrender.com/customerValidation",{email,password})
         .then(res=> {
             console.log(res.data.token);
             localStorage.setItem('x-token',res.data.token); 

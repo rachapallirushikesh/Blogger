@@ -31,7 +31,7 @@ export default function EditCard(){
 
     function handlePost(){
         const token = localStorage.getItem('x-token');
-        axios.put('https://blogger-2knx.onrender.com/postBlogData',{title,url,name,content},{
+        axios.put('https://blogger-iz5z.onrender.com/postBlogData',{title,url,name,content},{
             headers:{
                 'x-token':token
             }

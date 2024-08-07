@@ -34,7 +34,7 @@ export default function EditProfile(){
 
     function handleClick(){
         const token = localStorage.getItem('x-token');
-        axios.put('https://blogger-2knx.onrender.com/edit-profile',{name,number,gender},
+        axios.put('https://blogger-iz5z.onrender.com/edit-profile',{name,number,gender},
             {
                 headers: {
                     'x-token': token

@@ -9,7 +9,7 @@ export default function Blogs(){
     const navigate = useNavigate();
     useEffect(()=>{
         const token = localStorage.getItem('x-token');
-        axios.get('https://blogger-2knx.onrender.com/blogs')
+        axios.get('https://blogger-iz5z.onrender.com/blogs')
         .then(res=>{
             setArr(res.data);
         })
